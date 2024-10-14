@@ -143,8 +143,8 @@ jobs:
             new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
             new_image2="http://docker.liuchuanyang.com:4888/$platform_prefix$name_space_prefix$image_name_tag"
             echo "docker tag $image $new_image"
-            docker tag $image $new_image
-            echo "docker push $new_image"
+            docker tag $image $new_image2
+            # echo "docker push $new_image"
             echo "docker push $new_image2"
             # docker push $new_image
             docker push $new_image2
